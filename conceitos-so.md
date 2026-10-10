@@ -37,3 +37,15 @@ endereços baixos
 Stack é um local na memória que funciona como LIFO. Ela aloca, parâmetros da função, endereço de retorno, variáveis locais e registradores salvos. Sempre que uma chamada de função for realizada ela faz o empilhamento e sempre a última a chegar, é a primeira a sair. Ela é bem menor que a Heap. 
 Heap é uma região na memória grande e flexível para alocação dinâmica: podendo alocar-se um bloco do tamanho necessário. Os dados aqui geralmente vivem além da função. O stack aponta endereços daqui. 
 
+## Concorrência x Paralelismo 
+
+Quando falamos de concorrência, estamos falando de um único núcleo dividindo diversas tarefas, intercalando entre elas. E quando falamos de paralelismo, estamos falando de diversas tarefas, mas cada uma rodando em um núcleo diferente.
+
+Dentro deste tema, podemos falar da context switching, que é quando o SO para uma thread e coloca outra para rodar. Antes disso, ele salva onde a thread parou e quando ela volta a rodar, volta exatamente do estado que parou. 
+
+Neste tema, falamos também de race condition, que é quando duas tarefas ou mais, tentam acessar ou modificar o mesmo recurso. Ou seja, uma thread chega para modificar algo, mas a outra que acessou no mesmo tempo, sobrescreve o que a primeira fez, para isso usamos algumas técnicas para que quando a thread acessar, ela bloqueie o acesso ao recurso e libere apenas ao sair. 
+
+Por fim, falamos de deadlocks, quando duas thread ficam esperando uma a outra para sempre. Ou seja, a thread A para ficar na condição X espera condição Y da thread B, mas para a thread B ficar na condição Y ela espera a thread A ficar na condição X. E vamos usar das técnicas na race condition para organizar e previnir-se dos deadlocks. 
+
+
+
