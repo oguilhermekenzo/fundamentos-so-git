@@ -61,5 +61,5 @@ O serviço vai:
 2. Rodar desacoplado de qualquer terminal; 
 3. É supervisionado (se cair, pode ser reiniciado automaticamente); 
 
-Para o linux, temos os daemons e para o windows temos o windows services, que são processos que rodam no background sem terminal associado.  
+Para o linux, temos os daemons e para o windows temos o windows services, que são processos que rodam no background sem terminal associado. Alterações aqui para o conflito na segunda branch.
 
