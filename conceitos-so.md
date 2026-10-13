@@ -62,3 +62,25 @@ O serviço vai:
 3. É supervisionado (se cair, pode ser reiniciado automaticamente); 
 
 Para o linux, temos os daemons e para o windows temos o windows services, que são processos que rodam no background sem terminal associado.
+
+## Comandos básicos do CMM
+
+```
+dir                               # listar
+dir /b                            # lista de forma mais limpa
+dir /a                            # lista ocultos tambémm
+dir /s                            # lista subpastas também
+cd                                # acessar pasta
+mkdir pasta                       # criar nova pasta
+copy nul arq.txt                  # cria arquivo vazio
+copy arq.txt c:\diretorio         # copiar arquivo
+move arq.txt c:\diretorio         # mover arquivo
+ren novoArq.txt novoArqRename.txt # renomear arquivo
+del novoArqRename.txt             # deletar arquivo
+rmdir pasta                       # apaga pasta sozinha
+rmdir /s pasta                    # apaga pasta com tudo dentro
+type notas.txt                    # ver arquivo
+
+tasklist                          # listar processo 
+taskList | findstr opera          # listar processo apenas do programa mencionado
+```
