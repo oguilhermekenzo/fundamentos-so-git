@@ -6,7 +6,8 @@ Repositório de estudos pessoais sobre conceitos de sistemas operacionais e Git,
 
 | Módulo | Arquivo | Tópicos |
 |--------|---------|---------|
-| 00 | [conceitos-so.md](conceitos-so.md) | Programas, processos e threads · Heap x Stack · Concorrência x Paralelismo · Como serviços rodam no SO |
+| 00 | [conceitos-so.md](conceitos-so.md) | Programas, processos e threads · Estados de um processo · Heap x Stack · Concorrência x Paralelismo · Kernel e syscalls · Serviços no SO · Comandos CMD e Linux |
+| 00 | [conceitos-git.md](conceitos-git.md) | Modelo mental do Git · Commits · Configuração inicial · Branches · Merge e conflitos · Rebase · Pull Requests |
 
 ## Objetivo
 
